@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    .scroll {
+        max-height: 355px;
+        overflow-y: auto;
+    }
+</style>
+
+<body class="bg-info">
+    <nav class=" navbar navbar-expand-lg navbar-white  pb-4 pt-4 bg-dark  fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+            <div class="container">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#"></a>
+                    <a class="nav-item nav-link" href="#" style="margin-right: 20%; color: white;">lOGO</a>
+                    <a class="nav-item nav-link active " href="../admin/admin.html" style=" color: white;">Dashboard</a>
+                    <a class="nav-item nav-link active " href="../admin/reports.html" style=" color: white;">Reports</a>
+
+                    <a class="nav-item nav-link" href="product.html" style=" color: white;">Products</a>
+                    <a class="nav-item nav-link" href="./account.html" style=" color: white;">Accounts</a>
+                    <a class="nav-item nav-link" href="./setting.html" style=" color: white;">Settings</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container " style="margin-top: 10%;">
+        <div class="row">
+            <div class="col-sm-9 pb-5">
+                <div class="card" style="padding-bottom: 5%;margin-right: 30   px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop Brand/ Model</h5>
+                        <div class="col-sm-14 mt-5 ">
+                            <div class="card " style="padding-bottom: 2%;">
+                                <div class="card-body scroll">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col"></th>
+                                                <th scope="col">laptop Brand </th>
+                                                <th scope="col">Unit Sold</th>
+                                                <th scope="col">In stock</th>
+                                                <th scope="col"></th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row"><input type="checkbox"></th>
+
+                                                <td>Acer Aspire 5 A515-52G</td>
+                                                <td>15,000</td>
+                                                <td>8</td>
+                                                <td><i class="fa fa-trash-o" style="font-size:36px"></i></td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><input type="checkbox"></th>
+                                                <td>
+                                                    Acer Predator Helios 300 </td>
+                                                <td>12,000</td>
+                                                <td>2,575</td>
+                                                <td><i class="fa fa-trash-o" style="font-size:36px"></i></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><input type="checkbox"></th>
+                                                <td>Acer Swift 3 SF314-54</td>
+                                                <td>17,246</td>
+                                                <td>5,761</td>
+                                                <td><i class="fa fa-trash-o" style="font-size:36px"></i></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><input type="checkbox"></th>
+                                                <td>Acer Swift 3 SF314-54</td>
+                                                <td>5,000</td>
+                                                <td>210</td>
+                                               <td><i class="fa fa-trash-o" style="font-size:36px"></i></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><input type="checkbox"></th>
+                                                <td>Dell Inspiron 15-3567</td>
+                                                <td>896</td>
+                                                <td>1,985</td>
+                                               <td><i class="fa fa-trash-o" style="font-size:36px"></i></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><input type="checkbox"></th>
+                                                <td>Dell XPS 15-9560</td>
+                                                <td>7,043</td>
+                                                <td>676</td>
+                                               <td><i class="fa fa-trash-o" style="font-size:36px"></i></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><input type="checkbox"></th>
+                                                <td>Lenovo Legion 5 15</td>
+                                                <td>2,030</td>
+                                                <td>972</td>
+                                               <td><i class="fa fa-trash-o" style="font-size:36px"></i></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><input type="checkbox"></th>
+                                                <td>Lenovo Legion 7i</td>
+                                                <td>960</td>
+                                                <td>578</td>
+                                               <td><i class="fa fa-trash-o" style="font-size:36px"></i></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><input type="checkbox"></th>
+                                                <td>Apple MacBook Air MQD32PP/A</td>
+                                                <td>2,540</td>
+                                                <td>1,051</td>
+                                               <td><i class="fa fa-trash-o" style="font-size:36px"></i></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><input type="checkbox"></th>
+                                                <td>Apple MacBook Pro MD101ZP/A</td>
+                                                <td>890</td>
+                                                <td>761</td>
+                                               <td><i class="fa fa-trash-o" style="font-size:36px"></i></td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                            <button class="btn btn-outline-danger mt-5" style="width: 100%;">Delete Product</button>
+                            <button class="btn btn-outline-primary mt-2" style="width: 100%;">Add Product</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card" style="padding-bottom: 15%;">
+                    <div class="card-body float-right">
+                        <h5 class="card-title">Store Category</h5>
+                        <div class="col-sm-14 mt-5 ">
+                            <div class="card " style="padding-bottom: 2%;">
+                                <div class="card-body scroll">
+                                    <table class="table">
+                                        
+                                        <tbody>
+                                            <tr>
+                                                <td >pending</td>
+                                                <td><i class="fa fa-trash-o" style="font-size:36px"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jacob</td>
+                                                <td><i class="fa fa-trash-o" style="font-size:36px"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Larry</td>
+                                                <td><i class="fa fa-trash-o" style="font-size:36px"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Larry</td>
+                                                <td><i class="fa fa-trash-o" style="font-size:36px"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                           
+                            <button class="btn btn-outline-primary mt-5" style="width: 100%;">Add New Store</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

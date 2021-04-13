@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/profile.css">
+
+    <title>Profile</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <a class="navbar-brand" href="#" style="width: 100px;"><img src="../img/logo.jpg" alt=""
+                style="width: 40px; height: 40px;  "></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="width: 100px;">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="../html/home.html" style="width: 100px;">𝐇𝐨𝐦𝐞</a>
+                <a class="nav-item nav-link" href="../html/store.html" style="width: 100px;">𝐒𝐭𝐨𝐫𝐞</a>
+                <a class="nav-item nav-link" href="../html/cart.html" style="width: 100px;">𝐂𝐚𝐫𝐭</a>
+                <a class="nav-item nav-link" href="../html/services.html" style="width: 100px;">𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬</a>
+                <a class="nav-item nav-link" href="../html/about.html" style="margin-right: 700px;">𝐀𝐛𝐨𝐮𝐭</a>
+                <a class="nav-item nav-link " href="../html/profile.html"><img src="../img/avatar.png" alt=""
+                        style="width: 30px; height: 30px;"></a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card pt-3" id="con">
+                    <center>
+                        <input id="upload" type="file" onchange="readURL(this);" hidden>
+                        <img id="imageResult" class="card-img-top" src="../img/itlog.jfif">
+                    </center>
+                    <div class="input-group-append" id="file">
+                        <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-upload"
+                                style="font-size:36px; cursor: pointer;"></i></label>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Marjory Mondido</h5>
+                        <p class="card-text">
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card mb-3 pr-5">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Full Name</h6>
+                            </div>
+                            <input type="text" id="name"  value="Marjory Mondido" style="width: 50%; margin-right: 5%;"
+                                disabled><i class="fa fa-edit " id="edit1" style="font-size:43px"></i><button
+                                type="button" class="btn btn-outline-primary btn-sm ml-3" id="btn1">Done</button>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Email</h6>
+                            </div>
+                            <input type="text" id="email" value="marjorymondido@gmail.com"
+                                style="width: 50%; margin-right: 5%;" disabled><i class="fa fa-edit " id="edit2"
+                                style="font-size:43px"></i><button type="button"
+                                class="btn btn-outline-primary btn-sm ml-3" id="btn2">Done</button>
+                        </div>
+
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Phone</h6>
+                            </div>
+                            <input type="text" id="phone" value="(02) 8837 0195" style="width: 50%; margin-right: 5%;"
+                                disabled><i class="fa fa-edit " id="edit3" style="font-size:43px"></i><button
+                                type="button" class="btn btn-outline-primary btn-sm ml-3" id="btn3">Done</button>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Mobile</h6>
+                            </div>
+                            <input type="text" id="mobile" value="09752432134" style="width: 50%; margin-right: 5%;"
+                                disabled><i class="fa fa-edit " id="edit4" style="font-size:43px"></i><button
+                                type="button" class="btn btn-outline-primary btn-sm ml-3" id="btn4">Done</button>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Address</h6>
+                            </div>
+                            <input type="text" id="address" value="Talamban, Cebu City"
+                                style="width: 50%; margin-right: 5%;" disabled><i class="fa fa-edit" id="edit5"
+                                style="font-size:43px"></i><button type="button"
+                                class="btn btn-outline-primary btn-sm ml-3" id="btn5">Done</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+</body>
+
+
+<script src="jquery.js"></script>
+<script>
+
+    $('#edit1').click(function () {
+        $('#name').prop("disabled", false);
+    });
+    $('#btn1').click(function () {
+        $('#name').prop("disabled", true);
+    });
+    
+    $('#edit2').click(function () {
+        $('#email').prop("disabled", false);
+    });
+    $('#btn2').click(function () {
+        $('#email').prop("disabled", true);
+    });
+    $('#edit3').click(function () {
+        $('#phone').prop("disabled", false);
+    });
+    $('#btn3').click(function () {
+        $('#phone').prop("disabled", true);
+    });
+    $('#edit4').click(function () {
+        $('#mobile').prop("disabled", false);
+    });
+    $('#btn4').click(function () {
+        $('#mobile').prop("disabled", true);
+    });
+    $('#edit5').click(function () {
+        $('#address').prop("disabled", false);
+    });
+    $('#btn5').click(function () {
+        $('#address').prop("disabled", true);
+    });
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#imageResult')
+                    .attr('src', e.target.result);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $(function () {
+        $('#upload').on('change', function () {
+            readURL(input);
+            $('#def').hide();
+        });
+    });
+    var input = document.getElementById('upload');
+    var infoArea = document.getElementById('upload-label');
+
+    input.addEventListener('change', showFileName);
+    function showFileName(event) {
+        var input = event.srcElement;
+        var fileName = input.files[0].name;
+        infoArea.textContent = 'File name: ' + fileName;
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <title>Document</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<style>
+    .scroll {
+
+        max-height: 355px;
+        overflow-y: auto;
+    }
+</style>
+
+<body class="bg-info">
+
+
+    <nav class=" navbar navbar-expand-lg navbar-white  pb-4 pt-4 bg-dark  fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+            <div class="container">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#"></a>
+                    <a class="nav-item nav-link" href="#" style="margin-right: 20%; color: white;">lOGO</a>
+                    <a class="nav-item nav-link active " href="admin.html" style=" color: white;">Dashboard</a>
+                    <a class="nav-item nav-link  " href="reports.html" style=" color: white;">Reports</a>
+
+                    <a class="nav-item nav-link" href="../admin/product.html" style=" color: white;">Products</a>
+                    <a class="nav-item nav-link" href="./account.html" style=" color: white;">Accounts</a>
+                    <a class="nav-item nav-link" href="./setting.html" style=" color: white;">Settings</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <h4>Welcome Back,<strong>Admin</strong></h4>
+    <div class="container " style="margin-top: 10%;">
+        <div class="row ">
+            <div class="col-sm-6 ">
+                <div class="card " style="padding-bottom: 10%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Top Picks Brand</h5>
+                        <div id="piechart"></div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 ">
+                <div class="card ">
+                    <div class="card-body ">
+                        <h5 class="card-title">Notification List for Customers</h5>
+
+                        <div class="container ">
+                            <div class="row scroll">
+
+                                <!-- notifictions -->
+                                <div class="col">
+                                    <div class="col-sm-12 ">
+                                        <div class="card ">
+                                            <div class="card-body row">
+                                                <div class="col-sm-2">
+                                                    <img src="../../images/avatar.png" alt=""
+                                                        style="height: 50px;width: 50px;">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <p class="mb-2 "><b>Jessica</b> and <b>6 others</b> sent you new <a
+                                                            href="#" class="tm-notification-link">order updates</a>.
+                                                        Check
+                                                        new orders.</p>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-100 mt-2"></div>
+                                <div class="col">
+                                    <div class="col-sm-12 ">
+                                        <div class="card ">
+                                            <div class="card-body row">
+                                                <div class="col-sm-2">
+                                                    <img src="../../images/avatar1.jfif" alt=""
+                                                        style="height: 50px;width: 50px;">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <p class="mb-2 "><b>Jezyre</b> and <b>6 others</b> sent you new <a
+                                                            href="#" class="tm-notification-link">order updates</a>.
+                                                        Check
+                                                        new orders.</p>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-100 mt-2"></div>
+                                <div class="col">
+                                    <div class="col-sm-12 ">
+                                        <div class="card ">
+                                            <div class="card-body row">
+                                                <div class="col-sm-2">
+                                                    <img src="../../images/avatar.png" alt=""
+                                                        style="height: 50px;width: 50px;">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <p class="mb-2 "><b>Jessica</b> and <b>6 others</b> sent you new <a
+                                                            href="#" class="tm-notification-link">product updates</a>.
+                                                        Check
+                                                        new orders.</p>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-100 mt-2"></div>
+                                <div class="col">
+                                    <div class="col-sm-12 ">
+                                        <div class="card ">
+                                            <div class="card-body row">
+                                                <div class="col-sm-2">
+                                                    <img src="../../images/avatar2.jfif" alt=""
+                                                        style="height: 50px;width: 50px;">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <p class="mb-2 "><b>Devine</b> and <b>6 others</b> sent you new <a
+                                                            href="#" class="tm-notification-link">order Stuff</a>.
+                                                        Check
+                                                        new orders.</p>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-100 mt-2"></div>
+
+                                <div class="col">
+                                    <div class="col-sm-12 ">
+                                        <div class="card ">
+                                            <div class="card-body row">
+                                                <div class="col-sm-2">
+                                                    <img src="../../images/avatar3.jfif" alt=""
+                                                        style="height: 50px;width: 50px;">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <p class="mb-2 "><b>John Cyrill</b> and <b>6 others</b> sent you new
+                                                        <a href="#" class="tm-notification-link">order stuff</a>.
+                                                        Check
+                                                        new orders.
+                                                    </p>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-100 mt-2"></div>
+                                <div class="col">
+                                    <div class="col-sm-12 ">
+                                        <div class="card ">
+                                            <div class="card-body row">
+                                                <div class="col-sm-2">
+                                                    <img src="../../images/avatar.png" alt=""
+                                                        style="height: 50px;width: 50px;">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <p class="mb-2 "><b>Jessica</b> and <b>6 others</b> sent you new <a
+                                                            href="#" class="tm-notification-link">product updates</a>.
+                                                        Check
+                                                        new orders.</p>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-100 mt-2"></div>
+                                <div class="col">
+                                    <div class="col-sm-12 ">
+                                        <div class="card ">
+                                            <div class="card-body row">
+                                                <div class="col-sm-2">
+                                                    <img src="../../images/avatar.png" alt=""
+                                                        style="height: 50px;width: 50px;">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <p class="mb-2 "><b>Jessica</b> and <b>6 others</b> sent you new <a
+                                                            href="#" class="tm-notification-link">product updates</a>.
+                                                        Check
+                                                        new orders.</p>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div> <br>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card" style="padding-bottom: 8.5%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Users Bahavior</h5>
+                        <h6 class="card-subtitle  text-muted">24 Hours Performance</h6> <br>
+                        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                        <div class="row mt-2 ml-2" >
+                            <p><i class="fa fa-square" style="color: blue;"></i></i> Open</p>&nbsp;&nbsp;&nbsp;
+                            <p ><i class="fa fa-square" style="color: red;"></i>Click</p>&nbsp;&nbsp;&nbsp;
+                            <p ><i class="fa fa-square" style="color:green"></i>Clicked Second Time</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Notification List for Sellers</h5>
+                        <div class="container ">
+                            <div class="row scroll">
+
+                                <!-- notifictions -->
+                                <div class="col">
+                                    <div class="col-sm-12 ">
+                                        <div class="card ">
+                                            <div class="card-body row">
+                                                <div class="col-sm-2">
+                                                    <img src="../../images/avatar.png" alt=""
+                                                        style="height: 50px;width: 50px;">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <p class="mb-2 "><b>Raven</b> and <b>6 others</b> sent you new <a
+                                                            href="#" class="tm-notification-link">product updates</a>.
+                                                        Check
+                                                        new orders.</p>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-100 mt-2"></div>
+                                <div class="col">
+                                    <div class="col-sm-12 ">
+                                        <div class="card ">
+                                            <div class="card-body row">
+                                                <div class="col-sm-2">
+                                                    <img src="../../images/avatar4.png" alt=""
+                                                        style="height: 50px;width: 50px;">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <p class="mb-2 "><b>Kyle</b> and <b>6 others</b> sent you new <a
+                                                            href="#" class="tm-notification-link">product updates</a>.
+                                                        Check
+                                                        new orders.</p>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-100 mt-2"></div>
+                                <div class="col">
+                                    <div class="col-sm-12 ">
+                                        <div class="card ">
+                                            <div class="card-body row">
+                                                <div class="col-sm-2">
+                                                    <img src="../../images/avatar5.png" alt=""
+                                                        style="height: 50px;width: 50px;">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <p class="mb-2 "><b>Restituto</b> and <b>6 others</b> sent you new
+                                                        <a href="#" class="tm-notification-link">product updates</a>.
+                                                        Check
+                                                        new orders.
+                                                    </p>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-100 mt-2"></div>
+                                <div class="col">
+                                    <div class="col-sm-12 ">
+                                        <div class="card ">
+                                            <div class="card-body row">
+                                                <div class="col-sm-2">
+                                                    <img src="../../images/avatar6.jfif" alt=""
+                                                        style="height: 50px;width: 50px;">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <p class="mb-2 "><b>Merry-ann</b> and <b>6 others</b> sent you new
+                                                        <a href="#" class="tm-notification-link">product updates</a>.
+                                                        Check
+                                                        new orders.
+                                                    </p>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-100 mt-2"></div>
+
+                                <div class="col">
+                                    <div class="col-sm-12 ">
+                                        <div class="card ">
+                                            <div class="card-body row">
+                                                <div class="col-sm-2">
+                                                    <img src="../../images/avatar7.jfif" alt=""
+                                                        style="height: 50px;width: 50px;">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <p class="mb-2 "><b>Nenia</b> and <b>6 others</b> sent you new <a
+                                                            href="#" class="tm-notification-link">product updates</a>.
+                                                        Check
+                                                        new orders.</p>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-100 mt-2"></div>
+                                <div class="col">
+                                    <div class="col-sm-12 ">
+                                        <div class="card ">
+                                            <div class="card-body row">
+                                                <div class="col-sm-2">
+                                                    <img src="../../images/avatar8.jfif" alt=""
+                                                        style="height: 50px;width: 50px;">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <p class="mb-2 "><b>Juan</b> and <b>6 others</b> sent you new <a
+                                                            href="#" class="tm-notification-link">product updates</a>.
+                                                        Check
+                                                        new orders.</p>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-100 mt-2"></div>
+                                <div class="col">
+                                    <div class="col-sm-12 ">
+                                        <div class="card ">
+                                            <div class="card-body row">
+                                                <div class="col-sm-2">
+                                                    <img src="../../images/avatar9.jfif" alt=""
+                                                        style="height: 50px;width: 50px;">
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <p class="mb-2 "><b>Christine</b> and <b>6 others</b> sent you new
+                                                        <a href="#" class="tm-notification-link">product updates</a>.
+                                                        Check
+                                                        new orders.
+                                                    </p>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-14 mt-5 pb-5">
+            <div class="card p-5" style="padding-bottom: 2%;">
+                <div class="card-body scroll">
+                    <h5 class="card-title">Order Lists</h5>
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Order Number</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Customer</th>
+                                <th scope="col">Location</th>
+                                <th scope="col">Start Date</th>
+                                <th scope="col">EST Delivery Due</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+
+                                <td >pending</td>
+                                <td>Leslie</td>
+                                <td>Pinamungahan</td>
+                                <td>16:00, 12 NOV 2018</td>
+                                <td>08:00, 18 NOV 2018</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>pending</td>
+                                <td>Jessa</td>
+                                <td>Vallehermoso Negros</td>
+                                <td>16:00, 12 NOV 2018</td>
+                                <td>08:00, 18 NOV 2018</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>moving</td>
+                                <td>Judy</td>
+                                <td>Dalaguete</td>
+                                <td>16:00, 12 NOV 2018</td>
+                                <td>08:00, 18 NOV 2018</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>cancelled</td>
+                                <td>Ailyn</td>
+                                <td>catigbi-an Bohol</td>
+                                <td>16:00, 12 NOV 2018</td>
+                                <td>08:00, 18 NOV 2018</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>cancelled</td>
+                                <td>Jesselle</td>
+                                <td>Matalongon Dalaguete</td>
+                                <td>16:00, 12 NOV 2018</td>
+                                <td>08:00, 18 NOV 2018</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>moving</td>
+                                <td>Maria</td>
+                                <td>Rizal Pinamungahan</td>
+                                <td>16:00, 12 NOV 2018</td>
+                                <td>08:00, 18 NOV 2018</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td>pending</td>
+                                <td>Martin</td>
+                                <td>Mantalong Dalaguete</td>
+                                <td>16:00, 12 NOV 2018</td>
+                                <td>08:00, 18 NOV 2018</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">8</th>
+                                <td>movinf</td>
+                                <td>Resty</td>
+                                <td>Mabinay Negros</td>
+                                <td>16:00, 12 NOV 2018</td>
+                                <td>08:00, 18 NOV 2018</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
+                                <td>pending</td>
+                                <td>Ryan</td>
+                                <td>Mantalongon Dalaguete</td>
+                                <td>16:00, 12 NOV 2018</td>
+                                <td>08:00, 18 NOV 2018</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">10</th>
+                                <td>candcelled</td>
+                                <td>Marjory</td>
+                                <td>Canlaon Negros</td>
+                                <td>16:00, 12 NOV 2018</td>
+                                <td>08:00, 18 NOV 2018</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <center>
+        <p>Copyright © 2021 All rights reserved. </p>
+    </center>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+
+
+
+        // Load google charts
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        // Draw the chart and set the chart values
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Brand Name', 'sales'],
+                ['Lenovo', 6],
+                ['HP', 3],
+                ['DELL', 4],
+                ['Acer', 2],
+                ['Asus', 7],
+                ['Apple', 4],
+                ['MSI', 10],
+                ['Toshiba', 8]
+
+            ]);
+
+            // Optional; add a title and set the width and height of the chart
+            var options = { 'title': ' Average Sales', 'width': 500, 'height': 300 };
+
+            // Display the chart inside the <div> element with id="piechart"
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            chart.draw(data, options);
+        }
+        ////users behavior
+        var xValues = ["9:00AM", "12:00PM", "3:00PM", "6:00PM", "9:00PM", "12:00AM", "3:00AM", "6:00AM"];
+
+        new Chart("myChart", {
+            type: "line",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    data: [119, 375, 673, 289, 400, 261, 138, 268],
+                    borderColor: "red",
+                    fill: false
+                }, {
+                    data: [85, 184, 541, 470, 381, 90, 572, 693],
+                    borderColor: "green",
+                    fill: false
+                }, {
+
+                    data: [300, 451, 620, 584, 479, 724, 573, 789],
+
+                    borderColor: "blue",
+                    fill: false
+                    // },{
+                    //     data: [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
+                    //     borderColor: "yellow",
+                    //     fill: false
+                    // }, {
+                    //     data: [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
+                    //     borderColor: "brown",
+                    //     fill: false
+                    // }, {
+                    //     data: [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
+                    //     borderColor: "orange",
+                    //     fill: false
+                    // }, {
+                    //     data: [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
+                    //     borderColor: "violet",
+                    //     fill: false
+                    // }, {
+                    //     data: [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
+                    //     borderColor: "pink",
+                    //     fill: false
+                }]
+            },
+            options: {
+                legend: { display: false }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

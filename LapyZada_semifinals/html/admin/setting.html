@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="../../css/profile.css">
+    <title>Document</title>
+    <style>
+        .card1:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+        }
+
+        /* // */
+    </style>
+</head>
+
+
+<body class="bg-info">
+
+    <nav class=" navbar navbar-expand-lg navbar-white  pb-4 pt-4 bg-dark  fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+            <div class="container">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#"></a>
+                    <a class="nav-item nav-link" href="#" style="margin-right: 20%; color: white;">Logo</a>
+                    <a class="nav-item nav-link active " href="./admin.html" style=" color: white;">Dashboard</a>
+                    <a class="nav-item nav-link active " href="./reports.html" style=" color: white;">Reports</a>
+
+                    <a class="nav-item nav-link" href="./product.html" style=" color: white;">Products</a>
+                    <a class="nav-item nav-link" href="./account.html" style=" color: white;">Accounts</a>
+                    <a class="nav-item nav-link" href="./setting.html" style=" color: white;">Settings</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mb-5" style="margin-top: 10%;">
+        <div class="card" style="width: 70rem;">
+            <div class="card-body">
+                <h5 class="card-title">SETTING</h5>
+                <section id="tabs" class="project-tab">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <nav>
+                                    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab"
+                                            href="#nav-home" role="tab" aria-controls="nav-home"
+                                            aria-selected="true">BILLING</a>
+                                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
+                                            href="#nav-profile" role="tab" aria-controls="nav-profile"
+                                            aria-selected="false">LANGUAGE and REGION</a>
+                                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
+                                            href="#nav-contact" role="tab" aria-controls="nav-contact"
+                                            aria-selected="false">Project Tab 3</a>
+                                    </div>
+                                </nav>
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active mt-3" id="nav-home" role="tabpanel"
+                                        aria-labelledby="nav-home-tab">
+                                        <strong>
+                                            <h1>Choose the Best Way for Customers to Pay</h1>
+                                        </strong>
+                                        <p>Based on your country, these options have been selected. Pick the ones you
+                                            want and get automatically connected to the providers recommended. You can
+                                            always add more, or change providers later.</p>
+                                        <div class="card mt-3 bg-info" style="width: 100%;">
+                                            <div class="card-body">
+                                                <div class="card card1">
+                                                    <div class="card-body">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input mt-4" type="checkbox"
+                                                                value="" id="flexCheckDefault" />
+                                                            <h6 class="ml-3">Credit/Debit Cards</h6>
+                                                            <p class="ml-3">Accept payments with credit and debit cards.
+                                                                Fees vary
+                                                                between payment providers.<span class=" iconify"
+                                                                    style="margin-left: 200px;height: 25px;width: 25;"
+                                                                    data-icon="noto-v1:credit-card"
+                                                                    data-inline="false"></span></p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card card1">
+                                                    <div class="card-body">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input mt-4" type="checkbox"
+                                                                value="" id="flexCheckDefault" />
+                                                            <h6 class="ml-3">Paypal</h6>
+                                                            <Accept class="ml-3">Accept payments from customers with a
+                                                                PayPal account.<span class="iconify"
+                                                                    style="margin-left: 400px;height: 25px;width: 25;"
+                                                                    data-icon="logos:paypal" data-inline="false"></span>
+                                                                </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card card1">
+                                                    <div class="card-body">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input mt-4" type="checkbox"
+                                                                value="" id="flexCheckDefault" />
+                                                            <h6 class="ml-3">G-cash</h6>
+                                                            <p class="ml-3">Accept payments from customers with a G-cash
+                                                                account.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card card1">
+                                                    <div class="card-body">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input mt-4" type="checkbox"
+                                                                value="" id="flexCheckDefault" />
+                                                            <h6 class="ml-3">Cash on Delivery</h6>
+                                                            <p class="ml-3">Accept cash, check or other custom forms of
+                                                                payment. <span class="iconify"
+                                                                    style="margin-left: 400px;height: 25px;width: 25;"
+                                                                    data-icon="mdi:account-cash-outline"
+                                                                    data-inline="false"></span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                        aria-labelledby="nav-profile-tab">
+                                        <div class="card mt-5">
+                                            <div class="card-header">
+                                                <h6>Site Language</h6>
+                                                <p>Select the default language people see when they visit your site.</p>
+                                            </div>
+                                            <div class="card-body">
+                                                Site Language<span class="iconify ml-3"
+                                                    data-icon="entypo:info-with-circle" data-inline="false"
+                                                    style="height: 15px;width:20px;"></span><br>
+                                                <select id="languages" name="languages" style="width: 25%;">
+                                                    <option></option>
+                                                    <option><img src="../../images/US.png" alt=""
+                                                            style="height:15px;width:20px"> English</option>
+                                                    <option><img src="../../images/PH.png" alt=""
+                                                            style="height:15px;width:20px"> Filipino</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="card mt-5">
+                                            <div class="card-header">
+                                                <h6>Account language</h6>
+                                                <p>Select your account language. This won’t affect the language people
+                                                    see on your live site.</p>
+                                            </div>
+                                            <div class="card-body">
+                                                Account language
+                                                <span class="iconify ml-3" data-icon="entypo:info-with-circle"
+                                                    data-inline="false" style="height: 15px;width:20px;"></span><br>
+                                                <select id="languages" name="languages" style="width: 25%;">
+                                                    <option></option>
+                                                    <option><img src="../../images/US.png" alt=""
+                                                            style="height:15px;width:20px"> English</option>
+                                                    <option><img src="../../images/PH.png" alt=""
+                                                            style="height:15px;width:20px"> Filipino</option>
+                                                </select>
+                                                <p class="ml-5" style="display:inline"><strong>Note:</strong> You can
+                                                    also change your account language by clicking on your
+                                                    username in the top right</p>
+                                                <p style="display:inline;margin-left: 35%;">corner and hovering on the
+                                                    language next
+                                                    to the Log Out button.</p>
+                                            </div>
+                                        </div>
+                                        <div class="card mt-5">
+                                            <div class="card-header">
+                                                <h6>Site region</h6>
+                                                <p>Select the default format of number, dates and times for your site.
+                                                </p>
+                                            </div>
+                                            <div class="card-body">
+                                                Regional settings
+                                                <span class="iconify ml-3" data-icon="entypo:info-with-circle"
+                                                    data-inline="false" style="height: 15px;width:20px;"></span><br>
+                                                <select id="languages" name="languages" style="width: 25%;">
+                                                    <option></option>
+                                                    <option><img src="../../images/US.png" alt=""
+                                                            style="height:15px;width:20px"> English - Philippines
+                                                    </option>
+                                                    <option><img src="../../images/PH.png" alt=""
+                                                            style="height:15px;width:20px"> Filipino - Philippines
+                                                    </option>
+                                                </select><br><br>
+                                                <select name="timezone">
+                                                    <option></option>
+                                                    <option>(GMT+8) Phillipines</option>
+                                                    <option>(GMT+03:00) Tbilisi</option>
+                                                    <option>(GMT+03:30) Tehran</option>
+                                                    <option>(GMT+04:00) Abu Dhabi, Muscat</option>
+                                                    <option>(GMT+04:00) Baku</option>
+                                                    <option>(GMT+04:00) Yerevan</option>
+                                                    <option>(GMT+04:30) Kabul</option>
+                                                    <option>(GMT+05:00) Yekaterinburg</option>
+                                                    <option>(GMT+05:45) Kathmandu</option>
+                                                    <option>(GMT+06:00) Astana, Dhaka</option>
+                                                    <option>(GMT+06:30) Yangon (Rangoon)</option>
+                                                    <option>(GMT+07:00) Krasnoyarsk</option>
+                                                    <option>(GMT+08:00) Perth</option>
+                                                </select>
+                                                <div class="col-sm-4">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Special title treatment</h5>
+                                                            <p class="card-text">With supporting text below as a natural
+                                                                lead-in to additional content.</p>
+                                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                            aria-labelledby="nav-contact-tab">
+                                            <div class="card  mt-4" style="width: 18rem;">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Card title</h5>
+                                                    <h6 class="card-subtitle  text-muted">Card subtitle</h6>
+                                                    <p class="card-text">Some quick example text to build on the card
+                                                        title
+                                                        and make up the bulk of the card's content.</p>
+                                                    <a href="#" class="card-link">Card link</a>
+                                                    <a href="#" class="card-link">Another link</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mt-5">
+                                            <div class="card-header">
+                                                <h6>Site currency</h6>
+                                                <p>Select the currency you’ll get paid with and that visitors see on
+                                                    your site.</p>
+                                            </div>
+                                            <div class="card-body">
+                                                Currency
+                                                <span class="iconify ml-3" data-icon="entypo:info-with-circle"
+                                                    data-inline="false" style="height: 15px;width:20px;"></span><br>
+                                                <select id="languages" name="languages" style="width: 25%;">
+                                                    <option></option>
+                                                    <option>Philippine Peso - PHP (₱)</option>
+                                                    <option><img src="../../images/PH.png" alt=""
+                                                            style="height:15px;width:20px"> Filipino</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

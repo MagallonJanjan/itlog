@@ -1,0 +1,35 @@
+body {
+    background-color: #e2e8f0;
+
+
+}
+
+#con {
+    position: relative;
+
+}
+
+#file {
+    position: absolute;
+    bottom: 30%;
+    left: 60%;
+}
+#imageResult{
+    width: 50%;
+    height: 50%;
+}
+#edit1{
+    cursor: pointer;
+}
+#edit2{
+    cursor: pointer;
+}
+#edit3{
+    cursor: pointer;
+}
+#edit4{
+    cursor: pointer;
+}
+#edit5{
+    cursor: pointer;
+}

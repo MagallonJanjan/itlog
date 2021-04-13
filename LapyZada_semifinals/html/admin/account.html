@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/profile.css">
+    <title>Document</title>
+    <style>
+        #myInput {
+            background-image: url('/css/searchicon.png');
+            background-position: 10px 12px;
+            background-repeat: no-repeat;
+            width: 100%;
+            font-size: 16px;
+            padding: 12px 20px 12px 40px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+
+<body class="bg-info">
+
+    <nav class=" navbar navbar-expand-lg navbar-white  pb-4 pt-4 bg-dark  fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+            <div class="container">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#"></a>
+                    <a class="nav-item nav-link" href="#" style="margin-right: 20%; color: white;">Logo</a>
+                    <a class="nav-item nav-link active " href="admin.html" style=" color: white;">Dashboard</a>
+                    <a class="nav-item nav-link active " href="reports.html" style=" color: white;">Reports</a>
+
+                    <a class="nav-item nav-link" href="../admin/product.html" style=" color: white;">Products</a>
+                    <a class="nav-item nav-link" href="account.html" style=" color: white;">Accounts</a>
+                    <a class="nav-item nav-link" href="setting.html" style=" color: white;">Settings</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card" style="margin-top: 15%;">
+            <h5 class="card-header">List of Accounts</h5>
+            <div class="card-body">
+                <h5 class="card-title">Accounts</h5>
+
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.."
+                    title="Type in a name">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Account Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Posistion</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myTable">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto@mail.com</td>
+                            <td>9897897</td>
+                            <td>Admin</td>
+                            <td>Offline</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton@yahoo.com</td>
+                            <td>0007878</td>
+                            <td>Seller</td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird@gmail.com</td>
+                            <td>4565412</td>
+                            <td>User</td>
+                            <td>Offline</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Hendrick</td>
+                            <td>unknown@noone.com</td>
+                            <td>566565</td>
+                            <td>User</td>
+                            <td>Online</td>
+                        </tr>
+                     
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-sm-6 ">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Change Avatar</h5>
+                        <center>
+                            <input id="upload" type="file" onchange="readURL(this);" hidden>
+                            <img id="imageResult" class="card-img-top" src="../../img/itlog.jfif">
+                        </center>
+                        <div class="input-group-append" id="file">
+                            <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-upload"
+                                    style="font-size:36px; cursor: pointer;"></i></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-5">
+                <div class="card">
+                    <div class="card-body" style="padding-bottom: 8%;">
+                        <h5 class="card-title">Account Setting</h5>
+                        <form>
+                            <label for="Account Name">Account Name<br>
+                                <input type="text" placeholder="Username" style="width: 120%;" required>
+                            </label>
+                            <label class="ml-5" for="Account Name">Account Email<br>
+                                <input type="email" placeholder="Username" style="width: 142%;" required>
+                            </label>
+                            <label for="Account Name">Password<br>
+                                <input type="password" placeholder="Username" style="width: 120%;" required>
+                            </label>
+                            <label class="ml-5" for="Account Name">Re-enter Password<br>
+                                <input type="password" placeholder="Username" style="width: 142%;" required>
+                            </label>
+                            <label for="Account Name">Phone<br>
+                                <input type="text" placeholder="Username" style="width: 120%;" required>
+                            </label>
+                            <button class="btn btn-outline-primary ml-5" style="width: 52%;">Update
+                                Profile</button><br><br>
+                            <button class="btn btn-outline-danger" style="width: 100%;">Delete Your Account </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#imageResult')
+                        .attr('src', e.target.result);
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        $(function () {
+            $('#upload').on('change', function () {
+                readURL(input);
+                $('#def').hide();
+            });
+        });
+        var input = document.getElementById('upload');
+        var infoArea = document.getElementById('upload-label');
+
+        input.addEventListener('change', showFileName);
+        function showFileName(event) {
+            var input = event.srcElement;
+            var fileName = input.files[0].name;
+            infoArea.textContent = 'File name: ' + fileName;
+        }
+        ///////FILTER SEARCH///////
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
